@@ -1,0 +1,41 @@
+div, * {
+  box-sizing: border-box;
+  outline: 1px solid rgba(0, 0, 0, 0.125); }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #080808; }
+
+body {
+  width: 200px;
+  height: 100px;
+  font-family: "Karla", sans-serif;
+  font-size: 15px; }
+
+.slider {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end; }
+  .slider .slider__track {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: black; }
+    .slider .slider__track .slider__thumb {
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      background: white;
+      border: 1px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%); }
+
